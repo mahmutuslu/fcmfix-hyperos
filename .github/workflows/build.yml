@@ -23,20 +23,14 @@ jobs:
         with:
           gradle-version: '8.10.2'
 
-      - name: Dosyaları Bul ve APK Derle
-        run: |
-          # Proje kökünü otomatik bul (settings.gradle veya build.gradle nerede ise)
-          PROJ_DIR=$(find . -name "settings.gradle*" -exec dirname {} \; | head -n 1)
-          if [ -z "$PROJ_DIR" ]; then
-            PROJ_DIR="."
-          fi
-          echo "Proje dizini bulundu: $PROJ_DIR"
-          cd "$PROJ_DIR"
-          gradle assembleRelease --no-daemon --stacktrace
+      - name: Android Lisanslarını Onayla
+        run: yes | sdkmanager --licenses || true
+
+      - name: APK Derle (Otomatik İmzalı)
+        run: gradle assembleDebug --no-daemon --stacktrace
 
       - name: APK'yı Çıktı Olarak Yükle
         uses: actions/upload-artifact@v4
         with:
-          name: FCMFix-HyperOS4-Release-APK
-          path: |
-            **/build/outputs/apk/**/*.apk
+          name: FCMFix-HyperOS4-APK
+          path: app/build/outputs/apk/debug/*.apk

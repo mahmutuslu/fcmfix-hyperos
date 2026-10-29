@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Uygulama adı -->
+    <string name="app_name">FCMFix - HyperOS 4</string>
+    <string name="xposed_description">HyperOS 4 için FCM (Firebase Cloud Messaging) bildirim düzeltme modülü. Arka planda bildirim alımını optimize eder.</string>
+
+    <!-- Ana ekran -->
+    <string name="module_title">FCM Düzeltme Modülü</string>
+    <string name="module_subtitle">HyperOS 4 İçin Optimize Edildi</string>
+    <string name="module_status_active">Modül Aktif ✓</string>
+    <string name="module_status_inactive">Modül Etkin Değil ✗</string>
+    <string name="module_status_hint">LSPosed/APatch üzerinden modülü etkinleştirip cihazı yeniden başlatın</string>
+
+    <!-- Durum kartları -->
+    <string name="card_framework_hook">Sistem Çerçevesi Hook</string>
+    <string name="card_framework_hook_desc">Arka plan uyanma ve yayın kısıtlamalarını devre dışı bırakır</string>
+    <string name="card_powerkeeper_hook">PowerKeeper Hook</string>
+    <string name="card_powerkeeper_hook_desc">Google servislerinin ağ bağlantısının kesilmesini engeller</string>
+    <string name="card_greezer_hook">Greezer / Aurogon Hook</string>
+    <string name="card_greezer_hook_desc">GMS işlemlerinin dondurulmasını engeller</string>
+    <string name="card_idle_hook">Cihaz Bekleme Hook</string>
+    <string name="card_idle_hook_desc">Derin uyku modunda Google servislerini beyaz listeye ekler</string>
+
+    <!-- Ayarlar -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="setting_bypass_broadcast">Yayın Kısıtlamasını Atla</string>
+    <string name="setting_bypass_broadcast_desc">Durmuş uygulamalara FCM yayınlarının iletilmesini sağlar</string>
+    <string name="setting_bypass_autostart">Otomatik Başlatma Kısıtlamasını Atla</string>
+    <string name="setting_bypass_autostart_desc">FCM tarafından uygulamaların arka planda başlatılmasına izin verir</string>
+    <string name="setting_bypass_network">Ağ Kısıtlamasını Atla</string>
+    <string name="setting_bypass_network_desc">GMS ağ bağlantısının kesilmesini engeller</string>
+    <string name="setting_bypass_freeze">Dondurma Kısıtlamasını Atla</string>
+    <string name="setting_bypass_freeze_desc">GMS\'in arka planda dondurulmasını engeller</string>
+    <string name="setting_bypass_idle">Bekleme Beyaz Listesine Ekle</string>
+    <string name="setting_bypass_idle_desc">GMS\'i cihaz bekleme beyaz listesine otomatik ekler</string>
+
+    <!-- Uygulama yönetimi -->
+    <string name="apps_title">Korunan Uygulamalar</string>
+    <string name="apps_subtitle">FCM bildirimleri için korunacak uygulamaları seçin</string>
+    <string name="apps_search_hint">Uygulama ara…</string>
+    <string name="apps_select_all">Tümünü Seç</string>
+    <string name="apps_deselect_all">Tümünü Kaldır</string>
+    <string name="apps_show_system">Sistem Uygulamalarını Göster</string>
+    <string name="apps_empty">Uygulama bulunamadı</string>
+    <string name="apps_loading">Uygulamalar yükleniyor…</string>
+
+    <!-- Kapsam bilgisi -->
+    <string name="scope_title">LSPosed Kapsam Bilgisi</string>
+    <string name="scope_info">Bu modülün düzgün çalışması için LSPosed\'da aşağıdaki kapsamları etkinleştirin:</string>
+    <string name="scope_framework">Sistem Çerçevesi (android)</string>
+    <string name="scope_powerkeeper">PowerKeeper (com.miui.powerkeeper)</string>
+    <string name="scope_hint">Her iki kapsam da işaretlenmelidir, ardından cihazı yeniden başlatın.</string>
+
+    <!-- Log -->
+    <string name="log_title">Günlük Kayıtları</string>
+    <string name="log_empty">Henüz günlük kaydı yok</string>
+    <string name="log_clear">Günlüğü Temizle</string>
+    <string name="log_export">Günlüğü Dışa Aktar</string>
+    <string name="log_hook_success">Hook başarılı: %1$s</string>
+    <string name="log_hook_failed">Hook başarısız: %1$s</string>
+    <string name="log_broadcast_allowed">Yayın izin verildi: %1$s → %2$s</string>
+    <string name="log_autostart_allowed">Otomatik başlatma izin verildi: %1$s</string>
+    <string name="log_network_protected">Ağ koruması sağlandı: %1$s</string>
+    <string name="log_freeze_prevented">Dondurma engellendi: %1$s</string>
+    <string name="log_idle_whitelisted">Bekleme beyaz listesine eklendi: %1$s</string>
+
+    <!-- Genel -->
+    <string name="about_title">Hakkında</string>
+    <string name="about_version">Sürüm: %1$s</string>
+    <string name="about_description">Bu modül, HyperOS 4 (Xiaomi) cihazlarda Firebase Cloud Messaging (FCM) bildirimlerinin güvenilir şekilde alınmasını sağlar.\n\nSistem çerçevesi ve PowerKeeper\'daki agresif arka plan kısıtlamalarını devre dışı bırakarak Google Play Hizmetleri\'nin FCM bağlantısını sürdürmesine izin verir.</string>
+    <string name="about_credits">Katkılar: kooritea/fcmfix, Artifical0/fcmfix-coloros, zopulus/fcmfix-coloros17 temel alınmıştır.</string>
+    <string name="about_github">GitHub</string>
+
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="save">Kaydet</string>
+    <string name="reboot_required">Değişikliklerin uygulanması için cihazı yeniden başlatın</string>
+    <string name="reboot">Yeniden Başlat</string>
+    <string name="enabled">Etkin</string>
+    <string name="disabled">Devre Dışı</string>
+</resources>
